@@ -1,0 +1,10 @@
+:root {
+  --light-blue: #2998ff;
+  --dark-blue: #135cc5;
+  --light-red: #f87171;
+  --dark-red: #dc2626;
+
+  /* Intentions */
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
