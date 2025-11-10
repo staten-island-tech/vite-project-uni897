@@ -8,3 +8,18 @@
   --primary: var(--light-blue);
   --secondary: var(--dark-blue);
 }
+
+.cool {
+  --primary: var(--light-blue);
+  --secondary: var(--dark-blue);
+}
+
+.warm {
+  --primary: var(--light-red);
+  --secondary: var(--dark-red);
+}
+
+.waol {
+  background-color: var(--primary-color);
+  color: white;
+}
