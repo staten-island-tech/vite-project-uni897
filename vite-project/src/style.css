@@ -1,29 +1,28 @@
 :root {
-  --dark-green: #059c00;
-  --light-green: #07c500;
-  --darker-green: #0b8000;
+  --darker-blue: #053744;
+  --blue: #0b86b6;
+  --light-blue: #36d5d8;
   --white: #ffffff;
-  --light-red: #f87171;
-  --dark-red: #dc2626;
-  --darker-red: #8d0000;
-  --black: #000000;
+  --purple: #9158b1;
+  --yellow: #e5ac42;
+  --dark: #241f23;
 
   /* Intentions */
-  --background: var(--darker-green);
-  --primary: var(--light-green);
-  --secondary: var(--dark-green);
+  --background: var(--light-blue);
+  --primary: var(--blue);
+  --secondary: var(--darker-blue);
 }
 
-.green {
-  --background: var(--darker-green);
-  --primary: var(--light-green);
-  --secondary: var(--dark-green);
+.blue {
+  --background: var(--light-blue);
+  --primary: var(--blue);
+  --secondary: var(--darker-blue);
 }
 
-.red {
-  --background: var(--darker-red);
-  --primary: var(--light-red);
-  --secondary: var(--dark-red);
+.purple {
+  --background: var(--dark);
+  --primary: var(--purple);
+  --secondary: var(--yellow);
 }
 
 body {

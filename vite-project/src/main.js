@@ -9,13 +9,14 @@ button.addEventListener('click', () => {
     window.location.href = '/trivia.html'
 });
 
+
 document.querySelector(".waol").addEventListener("click", function () {
-  if (document.body.classList.contains("green")) {
-    document.body.classList.add("red");
-    document.body.classList.remove("green");
+  if (document.body.classList.contains("blue")) {
+    document.body.classList.add("purple");
+    document.body.classList.remove("blue");
   } else {
-    document.body.classList.add("green");
-    document.body.classList.remove("red");
+    document.body.classList.add("blue");
+    document.body.classList.remove("purple");
   }
 });
 
