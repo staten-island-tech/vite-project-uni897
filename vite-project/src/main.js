@@ -30,4 +30,8 @@ document.querySelector(".wol").addEventListener("click", function () {
     document.body.classList.add("blue");
     document.body.classList.remove("purple");
   }
-}); 
+});
+
+const questions = [
+  {type: "sci", question: "What's the chemical formula for carbon dioxide?", answers:""}
+]
