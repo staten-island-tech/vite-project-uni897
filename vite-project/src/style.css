@@ -27,7 +27,8 @@
 
 body {
   background-color: var(--background);
-  color: white
+  color: white;
+  font-weight: bold;
 }
 
 .title{
@@ -46,6 +47,7 @@ body {
 }
 
 .btn{
+  font-weight: bold;
   background-color: var(--primary);
   color: white;
   border-radius: 25px;
