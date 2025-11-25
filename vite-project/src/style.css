@@ -58,18 +58,11 @@ body {
   cursor: pointer;
 }
 
-.trivia{
-  margin: 0 auto;
-  /*background-color: black;*/
-  width: 80%;
-  height: 80%;
-  align-items: center;
-}
-
 .question{
+  margin: 0 auto;
   border-radius: 25px;
   border: 10px solid var(--secondary);
-  height: 50%;
-  width: 90%;
+  height: 30%;
+  width: 60%;
   background-color: var(--primary);
 }

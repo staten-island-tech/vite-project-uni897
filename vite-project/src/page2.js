@@ -10,7 +10,6 @@ document.querySelector(".wol").addEventListener("click", function () {
     document.body.classList.remove("purple");
   }
 });
-
 const questions = [
   // Science Questions
   {id: 0, type: "Science", question: "What's the chemical formula for carbon dioxide?", answers: ["CO2", "H2O", "C12H22O11", "NH3"], correct: "CO2"},
@@ -76,3 +75,7 @@ const questions = [
   {id: 56, type: "History", question: "Who was the leader of the civil rights movement in the United States during the 1960s?", answers: ["Martin Luther King Jr.", "Malcolm X", "Rosa Parks", "Frederick Douglass"], correct: "Martin Luther King Jr."},
   {id: 57, type: "History", question: "What was the name of the ship that brought the Pilgrims to America in 1620?", answers: ["Mayflower", "Santa Maria", "Endeavour", "Beagle"], correct: "Mayflower"}
 ];
+
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector()
+})
