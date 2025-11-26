@@ -76,6 +76,15 @@ const questions = [
   {id: 57, type: "History", question: "What was the name of the ship that brought the Pilgrims to America in 1620?", answers: ["Mayflower", "Santa Maria", "Endeavour", "Beagle"], correct: "Mayflower"}
 ];
 
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min) ) + min;
+}
+
+console.log(localStorage.getItem('type'))
+
 document.addEventListener("DOMContentLoaded", () => {
-  document.querySelector()
+  let usedid = []
+  const category = localStorage.getItem('type')
+  const question = document.querySelector(question)
+  question.textContent = category
 })

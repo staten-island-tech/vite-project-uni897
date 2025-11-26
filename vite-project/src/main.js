@@ -19,8 +19,10 @@ buttons.forEach(btn =>{
     }}else if(type === "change"){
       window.location.href = '/trivia.html'
     }else{
+      localStorage.setItem('type', type)
       selected.textContent = "Current Selected: " + type
     }
   })
 })
+console.log(Math.floor(Math.random() * 10))
 
