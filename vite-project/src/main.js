@@ -8,6 +8,7 @@ const buttons = document.querySelectorAll("button")
 buttons.forEach(btn =>{
   btn.addEventListener("click", () =>{
     const type = btn.getAttribute("data-type")
+    console.log(type)
     const selected = document.querySelector('a')
     if(type === "waol"){
       if (document.body.classList.contains("blue")){
@@ -24,5 +25,4 @@ buttons.forEach(btn =>{
     }
   })
 })
-console.log(Math.floor(Math.random() * 10))
 

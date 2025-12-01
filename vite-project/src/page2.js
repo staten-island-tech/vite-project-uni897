@@ -77,14 +77,28 @@ const questions = [
 ];
 
 function random(min, max) {
-  return Math.floor(Math.random() * (max - min) ) + min;
+  return Math.floor(Math.random() * (max - min + 1) ) + min;
 }
 
-console.log(localStorage.getItem('type'))
+function display(min, max){
 
-document.addEventListener("DOMContentLoaded", () => {
+}
+
+function trivia(){
   let usedid = []
   const category = localStorage.getItem('type')
-  const question = document.querySelector(question)
-  
+  const question = document.querySelector(".question")
+  if(category === "Science"){
+    display(0, 18)
+  }else if(category === "Geography"){
+    display(19, 37)
+  }else if(category === "History"){
+    display(38, 57)
+  }else(
+    display(0, 57)
+  )
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  trivia()
 })
