@@ -86,5 +86,5 @@ document.addEventListener("DOMContentLoaded", () => {
   let usedid = []
   const category = localStorage.getItem('type')
   const question = document.querySelector(question)
-  question.textContent = category
+  
 })
