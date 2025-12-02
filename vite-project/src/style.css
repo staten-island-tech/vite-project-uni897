@@ -65,4 +65,46 @@ body {
   height: 30%;
   width: 60%;
   background-color: var(--primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+}
+
+.next{
+  background-color: var(--primary);
+  border-radius: 25px;
+  border: 10px solid var(--secondary);
+  width: 25%;
+  height: 10%;
+  display: block;
+  margin: 10 auto;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.choice{
+  background-color: var(--primary);
+  border-radius: 25px;
+  border: 10px solid var(--secondary);
+  width: 35%;
+  height: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.choices{
+  margin: 0 auto;
+  height: 50%;
+  width: 60%;
+  /*background-color: white;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
 }

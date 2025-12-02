@@ -78,20 +78,31 @@ const questions = [
   {id: 59, type: "History", question: "What was the name of the ship that brought the Pilgrims to America in 1620?", answers: ["Mayflower", "Santa Maria", "Endeavour", "Beagle"], correct: "Mayflower"}
 ];
 
-function random(min, max) {
-  return Math.floor(Math.random() * (max - min + 1) ) + min;
+function shuffle(min, max) {
+  const shuffled = questions.slice(min, max + 1)
+  for (let i = shuffled.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1))
+    const temp = shuffled[i]
+    shuffled[i] = shuffled[j]
+    shuffled[j] = temp
+  }
+  return shuffled
 }
 
 function display(min, max){
-  let usedid = []
-  for (var i = min; i < max; i++) {
-
+  let index = 0
+  const box = document.querySelector(".question")
+  const shuffled = shuffle(min, max)
+  document.querySelector(".next").addEventListener("click", () =>{
+    if(index < shuffled.length){
+      box.textContent = shuffled[index].question
+      index++
   }
+  })
 }
 
 function trivia(){
   const category = localStorage.getItem('type')
-  const question = document.querySelector(".question")
   if(category === "Science"){
     display(0, 19)
   }else if(category === "Geography"){
@@ -103,6 +114,4 @@ function trivia(){
   )
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-  trivia()
-})
+trivia()
