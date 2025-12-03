@@ -92,14 +92,19 @@ function shuffle(min, max) {
 function display(min, max){
   let index = 0
   const box = document.querySelector(".question")
+  const buttons = Array.from(document.querySelectorAll(".choice"))
   const shuffled = shuffle(min, max)
   document.querySelector(".next").addEventListener("click", () =>{
     if(index < shuffled.length){
       box.textContent = shuffled[index].question
+      for(let i = 0; i > 4; i++){
+        console.log(buttons[i])
+      }
       index++
   }
   })
 }
+
 
 function trivia(){
   const category = localStorage.getItem('type')
