@@ -88,35 +88,51 @@ function shuffle(min, max) {
   }
   return shuffled
 }
-
-function display(min, max){
+//possible issue that a person can just click the button multiple times and rack up correct answers
+function display(min, max, shuffled){
+  let correct = 0
   let index = 0
   const box = document.querySelector(".question")
   const buttons = Array.from(document.querySelectorAll(".choice"))
-  const shuffled = shuffle(min, max)
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () =>{
+      console.log(btn.textContent, shuffled[index].correct)
+      if(btn.textContent === shuffled[index].correct){
+        correct++
+        console.log("correct")
+      }
+    })
+  });
   document.querySelector(".next").addEventListener("click", () =>{
     if(index < shuffled.length){
       box.textContent = shuffled[index].question
-      for(let i = 0; i > 4; i++){
-        console.log(buttons[i])
+      for(let i = 0; i < 4; i++){
+        buttons[i].textContent = shuffled[index].answers[i]
       }
       index++
-  }
+    }else{
+      console.log(correct/(max-min))
+    }
   })
 }
 
-
+function grade(){
+  const buttons = Array.from(document.querySelectorAll(".choice"))
+}
+//issue here
 function trivia(){
   const category = localStorage.getItem('type')
+  const shuffled = shuffle(min, max)
   if(category === "Science"){
-    display(0, 19)
+    display(0, 19, shuffled)
   }else if(category === "Geography"){
-    display(20, 39)
+    display(20, 39, shuffled)
   }else if(category === "History"){
-    display(40, 59)
+    display(40, 59, shuffled)
   }else(
-    display(0, 59)
+    display(0, 59, shuffled)
   )
 }
 
 trivia()
+grade()

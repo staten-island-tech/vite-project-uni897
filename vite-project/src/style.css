@@ -6,11 +6,15 @@
   --purple: #9158b1;
   --yellow: #e5ac42;
   --dark: #241f23;
+  --red: #ff0000;
+  --green: #00ff0d;
 
   /* Intentions */
   --background: var(--light-blue);
   --primary: var(--blue);
   --secondary: var(--darker-blue);
+  --right: var(--green);
+  --wrong: var(--red);
 }
 
 .blue {
@@ -95,6 +99,7 @@ body {
   cursor: pointer;
   color: white;
   font-weight: bold;
+  font-size: large;
 }
 
 .choices{
