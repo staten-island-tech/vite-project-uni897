@@ -26,6 +26,9 @@ buttons.forEach(btn =>{
   })
 })
 
+const cate = localStorage.getItem('type')
+document.querySelector(".selected").textContent = "Current Selected: " + cate
+
 function grade(){
   const grade = localStorage.getItem('grade')
   const text = document.querySelector('.grade')
