@@ -47,7 +47,7 @@ body {
   align-items: center;
   flex-direction: column;
   width: 30vw;
-  height: 50%;
+  height: 60%;
 }
 
 .btn{
@@ -59,6 +59,16 @@ body {
   margin: 10px;
   height: 100%;
   width: 50%;
+  cursor: pointer;
+}
+
+.wol{
+  border-radius: 25px;
+  border: 6px solid var(--secondary);
+  background-color: var(--primary);
+  color: white;
+  font-weight: bold;
+  width: 10%;
   cursor: pointer;
 }
 
@@ -100,6 +110,14 @@ body {
   color: white;
   font-weight: bold;
   font-size: large;
+}
+
+.choice.correct{
+  background-color: var(--right);
+}
+
+.choice.incorrect{
+  background-color: var(--wrong);
 }
 
 .choices{
